@@ -12,7 +12,7 @@ I use a PLC (CLICK series from [**AutomationDirect**](https://www.automationdire
 
     mosquitto_pub -t plc/y709/toggle -n
 
-**MQTT publish reponses:**
+**MQTT publish responses:**
 
     plc/y709/set/ok (null)
 
