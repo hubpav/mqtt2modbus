@@ -1,10 +1,10 @@
 # MQTT to Modbus Bridge
 
-I use PLC (CLICK series from AutomationDirect) to control all lighting at home. Although the PLC and the basic lighting functionality operates independently, I needed a bridge between the PLC and the embedded Linux computer for my automation tasks implemented on higher level. This is a simple implementation of the MQTT protocol and Modbus written in C language that allows to easily control the lights using MQTT publish commands.
+I use a PLC (CLICK series from [**AutomationDirect**](https://www.automationdirect.com/)) to control all lighting at my home. Although the PLC and the basic lighting functionality operates independently, I needed a bridge between the PLC and the embedded Linux computer for my automation tasks implemented on a higher level. This is a simple implementation of the MQTT to Modbus bridge written in C language that allows to easily control the lights using the MQTT publish commands.
 
 ## Basic Usage
 
-**Publish command:**
+**MQTT publish commands:**
 
     mosquitto_pub -t plc/y709/set -m true
 
@@ -12,7 +12,7 @@ I use PLC (CLICK series from AutomationDirect) to control all lighting at home. 
 
     mosquitto_pub -t plc/y709/toggle -n
 
-**Publish reponses:**
+**MQTT publish reponses:**
 
     plc/y709/set/ok (null)
 
