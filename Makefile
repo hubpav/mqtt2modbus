@@ -1,6 +1,6 @@
 TARGET = mqtt2modbus
 CC = gcc
-CFLAGS = -g -Wall `pkg-config --cflags libmodbus`
+CFLAGS = -Wall -pedantic -std=gnu11 -O2 `pkg-config --cflags libmodbus`
 LIBS = -lmosquitto `pkg-config --libs libmodbus`
 
 .PHONY: default all clean
